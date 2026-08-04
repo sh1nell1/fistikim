@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fıstıkım ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0; min-height:100vh; overflow-x:hidden;
+ font-family:Georgia,"Times New Roman",serif;
+ background:radial-gradient(circle at 20% 10%,rgba(255,255,255,.8),transparent 28%),
+ linear-gradient(135deg,#f7ede1,#fffaf4 48%,#f0dfcd);
+ color:#493a32;
+}
+.page{width:min(760px,calc(100% - 28px));margin:25px auto 45px}
+.card{
+ background:rgba(255,252,247,.95); border:2px solid #d7a77a;
+ border-radius:20px; box-shadow:0 16px 45px rgba(93,65,45,.16);
+ padding:34px 28px 30px; position:relative;
+}
+.dots{display:flex;justify-content:center;gap:10px;margin-bottom:15px}
+.dot{width:10px;height:10px;border-radius:50%}
+.p{background:#7d5a8c}.y{background:#e4b84a}.r{background:#c86a61}.b{background:#6289a6}
+h1{text-align:center;margin:5px 0 8px;font-size:clamp(34px,8vw,58px);color:#6f4e3d}
+.subtitle{text-align:center;font-family:Arial,sans-serif;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#8d7668}
+.intro{text-align:center;min-height:250px;display:flex;flex-direction:column;justify-content:center}
+.intro h2{font-size:clamp(22px,5vw,32px);font-weight:normal;margin:0 0 14px}
+.intro p{font-size:17px;line-height:1.7;margin:0 auto 22px;max-width:530px}
+.music{
+ margin:auto;padding:18px;max-width:430px;border-radius:15px;background:#f5eadf;border:1px solid #dec4ad;text-align:center
+}
+.music-title{font-family:Arial,sans-serif;font-weight:700;color:#674b3c;margin-bottom:11px}
+button{border:0;border-radius:999px;padding:13px 23px;background:#6f4e3d;color:white;font-size:15px;cursor:pointer;box-shadow:0 5px 14px rgba(72,48,34,.18)}
+.note{display:none;opacity:0;font-size:18px;line-height:1.82}
+.note.show{display:block;animation:appear 1.5s ease forwards}
+.note p{margin:0 0 19px}
+.signature{text-align:center;font-size:23px;margin-top:30px;color:#9a574d}
+.end{text-align:center;margin-top:28px;padding:20px;border-top:1px solid #e5d2c0;color:#7b6253;font-size:17px}
+@keyframes appear{to{opacity:1}}
+.heart{position:fixed;pointer-events:none;opacity:.13;font-size:34px;animation:float 8s linear infinite}
+.h1{left:8%;bottom:-50px}.h2{right:10%;bottom:-50px;animation-delay:3s;font-size:26px}
+@keyframes float{from{transform:translateY(0) rotate(0)}to{transform:translateY(-115vh) rotate(25deg)}}
+@media(max-width:600px){.card{padding:25px 19px}.note{font-size:16.5px;line-height:1.78}}
+</style>
+</head>
+<body>
+<div class="heart h1">♥</div><div class="heart h2">♥</div>
+<main class="page">
+<section class="card">
+<div class="dots"><span class="dot p"></span><span class="dot y"></span><span class="dot r"></span><span class="dot b"></span></div>
+<h1>Fıstıkım ❤️</h1>
+<div class="subtitle">A little something for you</div>
+
+<section class="intro" id="intro">
+<h2>Önce müziği aç.</h2>
+<p>Sonra aşağıdaki yazıyı oku.<br>Bu köşe ne zaman ihtiyacın olursa burada olacak.</p>
+<div class="music">
+<div class="music-title">🎵 Cults — Always Forever</div>
+<button id="musicBtn" onclick="startLetter()">🎵 Müziği Başlat</button>
+<audio id="song" preload="auto"><source src="always-forever.mp3" type="audio/mpeg"></audio>
+</div>
+</section>
+
+<article class="note" id="note">
+<p>Eveeet fıstıkım bunu açıyorsan hediyene ulaşmış demeksin. Bu hediyeyi daha anlamlı kılmak için her zor zamanında ulaşabileceğin kimsen olmadığında bile aslında benim olduğumu bildiğin ve asssla yalnız olmadığını, hayatında her sorununda yanında olduğumu bildiğin bir köşe yapmak istedim.</p>
+<p>Hayatında istediğin şeyler istediğin gibi gitmediğinde, bazen ailen bazen arkadaşların bazen de ilerde mutlu olacağın insan seni aşağıya çekebilir sonuçta her ne kadar herkesle uyum içinde olduğunu hissetsende seni sadece sen bilirsin(birde ben ama çaktırma). Bu yüzden bu gibi dış faktörlerde asla onlara bel bağlamaman gerektiğini hatırlatmak isterim.</p>
+<p>Herkes sana bir halt beceremiyorsun dedikçe aynaya bak ve “beni ben büyüttüm beni ben yarattım bir başkası değil” de. Sonrasında arkana bakmadan içinden ne gelirse onu yap. Hislerine her zaman inan, biliyorum bir çok kez seni hayal kırılığına uğrattı ama kaçırdığın bir nokta var hiç bir zaman yanlış yapmadın doğrun neyse o yolda ilerledin.</p>
+<p>Muhattap olduğun insanlar ne senin kalemindi ne de eşin ya da benzerin. Asla ama asla çizgini bozma. Geleceğinde m3ün olmasa bile mutlu olabileceğini bil(gerçi bunu yazması bile çok zor!!). Maddiyat seni yormasın atlattığın zamanları hatırla her zaman maneviyattan beslen.</p>
+<p>Kariyerini sen yaşa sen düzenlene fikrin neyse her zaman onu yap çünkü emin ol ki verdiğin karar yanlış bile olsa başkasının fikrine uymak kadar kötü sonuçlanmayacaktır. Özünü kaybetme başkasın senin hakkında ileri geri konuşmasına izin verme. Herkese hep yaptığın gibi sınırını koy. Ne sen kolay kazanabilecek bir insansın ne de sınırlarının o kadar basit alt edilmeyeceğini unutma.</p>
+<p>Hep ama hep düşüşler yaşıyacaksın iş hayatında ya da aşk hayatında belki senin için en değerli olan arkadaşlık ilişkilerinde. Fıstık ama unutma sorun hiç bir zaman sen değildin olmayacaksında. İnsanlar senin akıbetine kapılacak ve bir şekilde seni suçlayacak şekilde sonlandıracaklar. Sakın bunlara inanma ve kafanda kurma.</p>
+<p>Seni kaybeden sadece bir insan değil, senin kusursuzluğunu, mükemmelliğini kendi güzelliğini bir gram yedirmeyişini ve en önemlisi kıvırcık saçlarını kaybetmiştir😠.</p>
+<p>Umarım bunu bir çok kez okuyacak kadar düşüşe geçmezsin ve umarım ki bu kadar okuyacak duruma geldiğinde bir o kadar iyi gelmesini isterim.</p>
+<p>Fıstıkın hep burda ama hayata bir kere geldiğini unutma hep öncelliğin sen ve duyguların olsun.</p>
+<div class="signature">İyi varsın fıstıkım, iyi ki doğdun ❤️</div>
+<div class="end">Ne zaman ihtiyacın olursa buraya geri gel. ❤️</div>
+</article>
+</section>
+</main>
+<script>
+function startLetter(){
+ const song=document.getElementById("song");
+ const btn=document.getElementById("musicBtn");
+ const intro=document.getElementById("intro");
+ const note=document.getElementById("note");
+ song.play().then(()=>{
+   intro.style.display="none";
+   note.classList.add("show");
+   window.scrollTo({top:0,behavior:"smooth"});
+ }).catch(()=>{
+   alert("Müzik dosyası bulunamadı. always-forever.mp3 dosyasını index.html ile aynı klasöre koy.");
+ });
+}
+</script>
+</body>
+</html>
